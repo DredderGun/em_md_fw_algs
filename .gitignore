@@ -1,0 +1,87 @@
+# =========================================================
+# Python
+# =========================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================================================
+# Jupyter / Scientific computing
+# =========================================================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# NumPy / SciPy temporary files
+*.npy
+*.npz
+
+# Pickle / joblib
+*.pkl
+*.pickle
+*.joblib
+
+# =========================================================
+# Outputs / Experiments
+# =========================================================
+results/
+outputs/
+logs/
+checkpoints/
+figures/
+plots/
+
+# Large experiment dumps
+*.csv
+*.tsv
+*.h5
+*.hdf5
+
+# =========================================================
+# VS Code
+# =========================================================
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# =========================================================
+# OS
+# =========================================================
+.DS_Store
+Thumbs.db
+
+# =========================================================
+# LaTeX (papers, reports)
+# =========================================================
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# =========================================================
+# Misc
+# =========================================================
+.cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# =========================================================
+# Optional: keep empty directories
+# =========================================================
+!.gitkeep
