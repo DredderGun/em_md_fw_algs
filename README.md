@@ -8,14 +8,14 @@ We aim in this project to compare the EM algorithm with classical convex optimiz
 * the Mirror Descent algorithm.
 
 We minimize a topic modeling problem with a decorrelation regularizer:  
-$$
+$$  
 \begin{align*}
 & \underset{\Theta, \Phi}{\text{min}}
 & & f(\Theta, \Phi) = -\sum_{d \in D} \sum_{w \in W} n_{dw} \ln{(\phi_{wt} \theta_{td})} + \frac{\tau}{2} \sum_{t \in T} \sum_{s \in T / t} \sum_{w \in W} \phi_{ws} \phi_{wt} \
 & \text{s.t.}
 & & \sum_{w \in W} \phi_{wt} = 1, ; \phi_{wt} \geq 0 \
 & & & \sum_{w \in W} \theta_{wt} = 1, ; \theta_{wt} \geq 0
-\end{align*} \quad \quad \quad (1)
+\end{align*} \quad \quad \quad (1)  
 $$  
 
 where $\Theta \in \mathbb{R}^{|T| \times |W|}$ and $\Phi \in \mathbb{R}^{|D| \times |T|}$. Here, $|T|$ is the number of topics (set manually by the user), $|W|$ is the number of words in the dictionary, and $|D|$ is the number of documents. Each document is represented as a bag-of-words object (e.g., a web page, a text document, or another text source). Note that in both matrices all rows sum to 1; that is, the feasible set is a productinc. product of simplices.
